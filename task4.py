@@ -10,3 +10,17 @@ numbers = {'dict1': [11, 20, 30, 17, 6, 24, 90, 15, 17],
           	'dict9': [12, 70, 18, 28, 18, 28, 53, 91],
           	'dict10': [29, 79, 18, 28, 18, 28, 32, 55]}
 # Напишите программу, которая удалит из значений словаря все четные числа.
+number = {}
+n=0
+k = 0
+
+for i in range(9):
+	n = n+1
+	number = []
+	for j in numbers[f'dict{n}']:
+
+		if j % 2 == 0:
+			number[f'dict{n}'] = (numbers[f'dict{n}']).pop(k)
+
+print(numbers)
+

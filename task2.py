@@ -4,5 +4,11 @@
 
 a = str(input('цифорки:')).split()
 
+res = {}
 for i in a:
-    
+    if int(i) %2 == 0:
+        res[int(i)] = 'чёт'
+    else:
+        res[int(i)] = 'нечет'
+
+print(res)
